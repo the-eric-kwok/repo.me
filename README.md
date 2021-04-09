@@ -26,7 +26,7 @@ installation for all of the dependencies and homebrew will starts.</br>
 
 ### 2. Download / Fork repo.me
 
-If you are _not_ hosting your repo on [GitHub Pages](https://pages.github.com/), you can download the zip file [here](https://github.com/syns/repo.me/archive/master.zip) and extract to a subfolder on your website.
+If you are _not_ hosting your repo on [GitHub Pages](https://pages.github.com/), you can download the zip file [here](https://github.com/revisitable/repo.me/archive/master.zip) and extract to a subfolder on your website.
 
 There are 2 options for those using [GitHub Pages](https://pages.github.com/).
 
@@ -59,12 +59,12 @@ The data below are the links that appear at the bottom of every **Webview / Cydi
     <footerlinks>
         <link>
             <name>Follow me on Twitter</name>
-            <url>https://twitter.com/truesyns</url> # Feel free to swap your twitter in for this!
+            <url>https://twitter.com/qdxHimself</url> # Feel free to swap your twitter in for this!
             <iconclass>glyphicon glyphicon-user</iconclass>
         </link>
         <link> # You can remove this if you wish, however if I may, please do not do so! It will allow others to find repo.me such as you have!
             <name>I want this depiction template</name>
-            <url>https://github.com/syns/repo.me</url>
+            <url>https://github.com/revisitable/repo.me</url>
             <iconclass>glyphicon glyphicon-thumbs-up</iconclass>
         </link>
     </footerlinks>
@@ -83,18 +83,18 @@ Next guide will show you how to assign and customize your depiction pages.
 
 ### 1.1 Adding a simple depiction page (Web Folder / Cydia)
 
-Go to the depictions folder and duplicate the folder `me.syns.oldpackage`. </br>
+Go to the depictions folder and duplicate the folder `com.iloveemogirls.oldpackage`. </br>
 Rename the duplicate with the same name as your package name. </br>
 There are 2 files inside the folder - `info.xml` and `changelog.xml`. </br>
 Update the 2 files with information regading your package. </br>
 The tags are pretty much self-explanatory. </br>
-Contact [@truesyns](https://twitter.com/truesyns) for questions.
+Contact [jay@iloveemogirls.com](mailto:jay@iloveemogirls.com) for questions.
 
 `info.xml`.
 
 ```xml
 <package>
-    <id>me.syns.oldpackage</id>
+    <id>com.iloveemogirls.oldpackage</id>
     <name>Old Package</name>
     <version>1.0.0-1</version>
     <compatibility>
@@ -132,10 +132,10 @@ Contact [@truesyns](https://twitter.com/truesyns) for questions.
 
 ### 1.2 Adding a simple depiction page (Native Folder / Sileo)
 
-Go to the /depictions/native/me.syns.samplepackage and copy the file `depiction.json`. </br>
+Go to the /depictions/native/com.iloveemogirls.sample and copy the file `depiction.json`. </br>
 Move into a folder labeled as your package name. </br>
 Edit The Labeled Parts (i.e. VERSION_NUMBER, TWEAK_NAME, etc.) or use the Sileo Depiction Generator by [@M4cs:](https://twitter.com/maxbridgland) [SileoGen](https://sileogen.com/). </br>
-Contact [@truesyns](https://twitter.com/truesyns) for questions.
+Contact [jay@iloveemogirls.com](mailto:jay@iloveemogirls.com) for questions.
 
 #### 2. Link the depiction page in your tweak's `control` file
 
@@ -149,13 +149,13 @@ Depiction: https://username.github.io/repo/depictions/web/?p=[idhere]
 Replace `[idhere]` with your actual package name.
 
 ```text
-Depiction: https://username.github.io/repo/depictions/web/?p=me.syns.oldpackage
+Depiction: https://username.github.io/repo/depictions/web/?p=com.iloveemogirls.oldpackage
 ```
 
 For Sileo Depictions, add the SileoDepiction key alongside the Depiction in your `control` file before compiling it.
 
 ```text
-SileoDepiction: https://username.github.io/repo/depictions/native/me.syns.samplepackage/depiction.json
+SileoDepiction: https://username.github.io/repo/depictions/native/com.iloveemogirls.sample/depiction.json
 ```
 
 #### 3. Rebuilding the `Packages` file
@@ -186,9 +186,9 @@ These are some extra things that can make your repository look even better on Si
 Change The Following Lines:
 
 ```
- "url": "https://raw.githubusercontent.com/syns/repo.me/master/assets/Banners/RepoHeader.png", <---- The Package Banner
+ "url": "https://raw.githubusercontent.com/revisitable/repo.me/master/assets/Banners/RepoHeader.png", <---- The Package Banner
         "title": "Sample Package", <---- Your Package Name
-        "package": "me.syns.newpackage", <---- The Actual Package
+        "package": "com.iloveemogirls.newpackage", <---- The Actual Package
 ```
 
   <p align="center">Special Thanks and Credits to: <a href="https://github.com/Supermamon/">Supermamon</a> for <a href="https://github.com/supermamon/Reposi3">Reposi3</a> (the base) & <a href="https://twitter.com/Diatrus/">Diatrus</a> for apt-ftparchive on macOS. And last but not least, biggest thanks to everyone who made a pull request to make repo.me better!</p>

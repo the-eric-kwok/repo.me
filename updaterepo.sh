@@ -87,5 +87,5 @@ if [[ "$OSTYPE" == "linux"* ]]; then # Linux usage of repo.me
 
     echo "Repository Updated, thanks for using repo.me!"
 else
-    echo "Running an unsupported operating system...? Contact me via Twitter @truesyns" # incase I've missed support for something, they should be contacting me.
+    echo "Running an unsupported operating system...? Contact me via Email jay@iloveemogirls.com" # incase I've missed support for something, they should be contacting me.
 fi
